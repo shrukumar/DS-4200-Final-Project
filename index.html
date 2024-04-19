@@ -10,18 +10,22 @@
     
     <h1>Home Away From Home - Vacation Rental Trends in NYC</h1>
 
-    <p></p>
+    <div class="center">
+        <p>Research by Claire Mahon, Rachel Spezzaferro, and Shru Kumar</p>
+    </div>
+
 
     <h3>Overall Introduction</h3>
 
     <p>With the rise of vacation rental sites, such as Airbnb and VRBO, we wanted to investigate factors that influence booking. Using a dataset scraped from Airbnb in 2019, we gain insight into the many components that influence Airbnb popularity in NYC. Our hope is that these trends could be applied to vacation rentals in other major cities in the US and beyond, which could help both guests to book cheaper, better stays and for owners to make higher profits. For example, as an owner, what neighborhoods and types of rentals will be the most successful? As a guest, where can you go to get more bang for your buck? 
 
         You can check out current pricing and information on the <a href="https://www.airbnb.com">AirBnb</a> website.</p>
-        
+   
         <div class = 'image'>
-            <div class = 'image'>
+            <div class = 'center'>
                 <img src="images/airbnb_logo_detail.jpeg" width="600px" height="auto" frameborder="0"></img>
             </div>
+     
 
     <h3>Introduction to the Data</h3>
 
@@ -104,7 +108,7 @@
             </table>
         </div>
 
-    <p>Meanwhile, we also believe that the geographical information is important when evaluating the Airbnb data. Therefore, we also make use of geographical information on Zillow and <a href="https://www.naturalearthdata.com/downloads/">Natural Earth</a>. These websites provides the geographical information for making maps for US states and cities. Zillow and Natural Earth were utilized for the following choropleth map.</p>
+    <p>Meanwhile, we also believe that the geographical information is important when evaluating the Airbnb data. Therefore, we also make use of geographical information on <a href="https://www.zillow.com/">Zillow</a> and <a href="https://www.naturalearthdata.com/downloads/">Natural Earth</a>. These websites provides the geographical information for making maps for US states and cities. Zillow and Natural Earth were utilized for the following choropleth map.</p>
 
     <h3>Choropleth Map of AirBnb Price by Neighborhood</h3>
 
@@ -122,28 +126,36 @@
     <p>To complete our task of discovering general pricing trends and the overall range of prices in Airbnbs, we created a histogram of the total pricing range. We concluded that prices are most commonly $50-$100 a night, with close to 3500 Airbnbs in that exact price range. Typically, the higher the price, the less Airbnbs on the market at that price.</p>
 
         <div class = 'histogram'>
-            <div class = 'image'>
+            <div class = 'center'>
                 <!-- <iframe src="histogram/index.html" width="100%" height="400px" frameborder="0"></iframe>-->
                 <img src="images/histogram.png" width="600px" height="auto" frameborder="0"></img>
             </div>
 
-    <h3>AirBnb Prices in Relation to Rental Type, Neighborhood, and Number of Reviews</h3>
+    <h3>AirBnb Prices in Relation to Rental Type</h3>
 
-    <p>Another task we wanted to complete was to compare the pricing of the rental to the room type being offered. We decided to create a boxplot to do this, so that we could easily see the side by side comparison of the maximum, minimum, and average prices of the three room styles: private room, entire home, and shared room. We found through this visualization that renting the entire home is generally the priciest option, followed by private room, leaving shared room as the cheapest option. We could also draw the conclusion that entire homes usually go for about $125 - $200 a night, private rooms for $50 - $100 a night, and shared rooms for $50 - $75 a night.</p>
+    <div class = 'container'>
 
     <div class = 'boxplot'>
-        <div class = 'image'>
+        <div class = 'center'>
             <!-- <iframe src="histogram/index.html" width="100%" height="400px" frameborder="0"></iframe>-->
             <img src="images/boxplot.png" width="600px" height="auto" frameborder="0"></img>
+            <p>Another task we wanted to complete was to compare the pricing of the rental to the room type being offered. We decided to create a boxplot to do this, so that we could easily see the side by side comparison of the maximum, minimum, and average prices of the three room styles: private room, entire home, and shared room. We found through this visualization that renting the entire home is generally the priciest option, followed by private room, leaving shared room as the cheapest option. We could also draw the conclusion that entire homes usually go for about $125 - $200 a night, private rooms for $50 - $100 a night, and shared rooms for $50 - $75 a night.</p>
+
         </div>
+    </div>
+</div>
 
-    <p>Moreover, we wanted to evaluate the relationship between average AirBnb prices for the top neighborhoods to stay in. New York City is known to be an expensive destination, but some travelers are willing to pay for the best of the best. Knowing the averages for the top 10 most expensive neighborhoods might also help a vacationer set an intended price range for their own stay. If you want to stay in Neponsit, a quaint and peaceful neighborhood in Rockaway known for prime beach stays, you could expect to spend $275 per night. Perhaps you’re more interested in a classic NYC experience in Greenwich Village. An apartment for a night would usually cost somewhere around $196. In general, someone looking to stay in one of NYC’s top 10 priciest neighborhoods should expect to pay an average of $185 to $275 per night.</p>
+    <h3>AirBnb Prices in Relation to Neighborhood and Number of Reviews</h3>
 
-        <div class = 'bar plot'>
-            <div class = 'image'>
+        <div class = 'container'>
+            <p>Moreover, we wanted to evaluate the relationship between average AirBnb prices for the top neighborhoods to stay in. New York City is known to be an expensive destination, but some travelers are willing to pay for the best of the best. Knowing the averages for the top 10 most expensive neighborhoods might also help a vacationer set an intended price range for their own stay. If you want to stay in Neponsit, a quaint and peaceful neighborhood in Rockaway known for prime beach stays, you could expect to spend $275 per night. Perhaps you’re more interested in a classic NYC experience in Greenwich Village. An apartment for a night would usually cost somewhere around $196. In general, someone looking to stay in one of NYC’s top 10 priciest neighborhoods should expect to pay an average of $185 to $275 per night.</p>
+            <div class = 'bar plot'>
+            <div class = 'center'>
                 <!-- <iframe src="histogram/index.html" width="100%" height="400px" frameborder="0"></iframe>-->
-                <img src="images/d3 bar plot.png" width="600px" height="auto" frameborder="0"></img>
+                <img src="images/d3 bar plot.png" width="500px" height="500px" frameborder="0"></img>
             </div>
+        </div>
+        </div>
 
     <p>Our next task was to find if there is a correlation between number of reviews and AirBnb price. To accomplish this task we created an interactive plot: scatterplot that visualizes the relationship between the number of reviews and prices. We found there may be a negative correlation between these factors, because as the number of reviews decrease, the price typically increases. This makes sense because it is possible that fewer people can afford to stay at more expensive Airbnbs, so fewer reviews are being written. The 5 other plots are latitude and longitude based scatters, where each point is the location of an Airbnb, separated by borough. Users can select a sliding window for prices on the main scatter plot, and only Airbnbs within that price range will show up on the borough scatters. This plot shows us how boroughs  like the Bronx, Staten Island, and Queens do not have any Airbnbs in the upper price ranges, whereas Manhattan and Brooklyn have Airbnbs at every price level. While sliding through price ranges, users can see where clusters of Airbnbs appear and disappear, depending on the price level.</p>
 
@@ -156,4 +168,9 @@
     <p>In general, we found that New York City has a wide range of AirBnb prices across its five boroughs. The highest prices were typically found in western Manhattan and Brooklyn, with the top ten most expensive neighborhoods ranging from an average cost of $180-$280 per night. However, the most common prices range from $50-$100 per night, which was less than we anticipated. More expensive AirBnbs were rarer to find. The age of our data may play a role in our skewed perception, as these prices were taken five years ago and do not reflect current inflated prices. We found that the most expensive AirBnbs, regardless of location, were typically full houses or apartments. This makes sense because privacy and area are at a premium in NYC. In general, places with more reviews had lower prices, which may indicate that more people are staying at the cheaper AirBnbs.
 
         To build upon this project in the future, we would like to compare AirBnb prices to hotel prices from 2019, to paint a more complete picture of short-term stays in New York City. It would also be interesting to compare this data to other major cities in the United States, such as Boston or Chicago. This way we can compare how AirBnb cultures differ across U.S. cities and determine where vacationers may find the best urban rental prices.</p>
+
+        <div class = 'center'>
+            <!-- <iframe src="histogram/index.html" width="100%" height="400px" frameborder="0"></iframe>-->
+            <img src="images/NewYorkStreets.jpg" width="600px" height="auto" frameborder="0"></img>
+        </div>
         
